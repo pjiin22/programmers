@@ -1,5 +1,8 @@
 def solution(numbers):
-    # 배열을 정렬
-    numbers.sort()
-    # 가장 큰 두 수의 곱과 가장 작은 두 수의 곱 중 최댓값을 선택
-    return max(numbers[0] * numbers[1], numbers[-1] * numbers[-2])
+
+    m=-10000000000
+    for i in range(0,len(numbers)-1):
+        for j in range(i+1,len(numbers)):
+            m=max(m,numbers[i]*numbers[j])
+              
+    return m
