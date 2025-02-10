@@ -1,3 +1,2 @@
-def solution(numbers): 
-    return round(sum(numbers) / len(numbers), 1)
-
+def solution(numbers):
+    return sum(numbers) / len(numbers)
