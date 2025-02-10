@@ -1,4 +1,5 @@
 def solution(my_string):
-    answer = ''
-    answer = my_string[::-1]
-    return answer
+    my_string=list(my_string)
+    my_string.reverse()
+    my_string=''.join(my_string)
+    return my_string
