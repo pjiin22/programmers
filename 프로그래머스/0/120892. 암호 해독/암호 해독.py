@@ -1,2 +1,7 @@
 def solution(cipher, code):
-    return ''.join(cipher[i - 1] for i in range(code, len(cipher) + 1, code))
+    answer = ''
+    
+    for i,j in enumerate(cipher):
+        if (i+1)%code ==0:
+            answer+=j
+    return answer
