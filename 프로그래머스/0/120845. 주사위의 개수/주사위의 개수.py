@@ -1,7 +1,6 @@
 def solution(box, n):
-    answer = 0
-    a = box[0] // n
-    b = box[1] // n
-    c = box[2] // n
-    answer = a * b * c
+    answer = 1
+    
+    for i in box:
+        answer *= i//n
     return answer
